@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    
+    <header>
+       <!-- <img class="logo" src="Imagenes/Logo.svg" alt="logo"> -->
+       <h1>Text to ASCII</h1>
+    </header>
+
+    
+    
+        <input id="ti1" value="a" />
+        <input id="ti2" />
+        <button onClick="convert();">Convert!</button>
+    
+
+   
+
+    <script>
+        function convert() {
+            var output = document.getElementById("ti2");
+            var input = document.getElementById("ti1").value;
+            output.value = "";
+            for (var i = 0; i< input.length; i++){
+              /*  output.value = input[i]; */
+              /* output.value =  input.toString(); */
+              /* .toString() + " "; */
+            }
+       
+            for (var i = 0; i < input.length; i++) {
+                output.value += input[i].charCodeAt() + " ";
+            }  
+        }
+    </script>
+</body>
+
+</html>
+
+  
